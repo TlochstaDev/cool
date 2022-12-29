@@ -1,0 +1,49 @@
+<h1>Journey of a Sea Turtle</h1>
+<h3>Station 1</h3><br>
+<button onclick="localStorage.setItem('points', '0');">Already Played? Reset points</button><br>
+<button onclick="random();">Choose Me!</button><br>
+<button onclick="random();">Choose Me!</button><br>
+<button onclick="random();">Choose Me!</button><br>
+<button onclick="random();">Choose Me!</button><br>
+
+<script>
+  const items = {
+    "Above High Tide",
+    "Vegetation",
+    "Artificial Light",
+    "Below High Tide"
+  }
+  const points = {
+    "10",
+    "5",
+    "3",
+    "1"
+  }
+ function random() {
+  var myrandom = Math.floor(Math.random() * items.length);
+  if (items[myrandom] = "Above High Tide") {
+  alert("You chose: Above High Tide!");
+    localStorage.setItem("points, points + "10");
+    window.location.href = "https://tlochsta.tk/cool/stage2.html";
+  } else {
+     if (items[myrandom] = "Vegetation") {
+     alert("You chose: Vegetation!");
+    localStorage.setItem("points, points + "5");
+    window.location.href = "https://tlochsta.tk/cool/stage2.html";
+    } else {
+       if (items[myrandom] = "Artificial Light") {
+       alert("You chose: Artificial Light!");
+    localStorage.setItem("points, points + "3");
+    window.location.href = "https://tlochsta.tk/cool/stage2.html";
+      } else {
+         if (items[myrandom] = "Below High Tide") {
+         alert("You chose: Below High Tide!");
+           localStorage.setItem("points, points + "3");
+           window.location.href = "https://tlochsta.tk/cool/stage2.html";
+          } 
+       }
+    }
+  }
+ }
+  
+</script>
